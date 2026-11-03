@@ -1,6 +1,12 @@
-variable "vm_name" {
+variable "vm_count" {
+  type        = number
+  description = "Number of virtual machines to create"
+  default     = 2
+}
+
+variable "vm_name_prefix" {
   type        = string
-  description = "Name of the Virtual Machine"
+  description = "Prefix name for the virtual machines"
 }
 
 variable "resource_group_name" {
